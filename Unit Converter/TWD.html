@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>TWD</title>
+      <link rel="stylesheet" href="styleTWD.css">
+      <script src="TWD.js"></script>
+  </head>
+  <body>
+      <section id="home">
+        <header>
+          Unit Conversions
+        </header>
+        <nav>
+          <div class="topdiv">
+            <a href="#temperature"><button  class="topmenu">Temperature</button></a>
+            <a href="#weight"><button  class="topmenu">Weight</button></a>
+            <a href="#distance"><button  class="topmenu">Distance</button></a>
+          </div>
+        </nav>
+      </section>    
+      <div style="clear:both;"></div>
+     
+      <div id="all-conversion-sections">
+        <h3>Temperature Converter</h3>
+        <section id="temperature"  class="b temperature">
+          <div id="tmp">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
+              <figcaption>Celcius to Farenheit Conversion</figcaption>
+            </figure>
+            <article>
+
+              <fieldset>
+                <p>
+                  <!-- label the input field -->
+                  <label>Celcius</label>
+                  <!-- input tag for enter the data -->
+                  <!-- kiloweightConvert function call
+                       function kiloweightConvert to evaluate value-->
+                  <input  type="number" placeholder="temperature" 
+                         oninput="temperatureConvert(this.value)" 
+                         onchange="temperatureConvert(this.value)" />
+              </p>
+              <p>fahrenheit: <span id="fahrenheit"></span></p>
+              </fieldset>
+              <aside>
+                To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
+              </aside>
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+        <h3>Weight Converter</h3>
+        <section id="weight"  class="b weight">          
+          <div id="wgt">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
+              <figcaption>Kilograms to Pound Conversion</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <p>
+                  <!-- label the input field -->
+                  <label>Kilograms</label>
+                  <!-- input tag for enter the data -->
+                  <!-- kiloweightConvert function call
+                       function kiloweightConvert to evaluate value-->
+                  <input id="Kilograms" type="number" placeholder="kilograms" 
+                         oninput="kiloweightConvert(this.value)" 
+                         onchange="kiloweightConvert(this.value)" />
+              </p>
+                
+              <!-- output field-->
+              <p>Pounds: <span id="Pounds"></span></p>
+              <p>Ounces: <span id="Ounces"></span></p>
+              <p>Grams: <span id="Grams"></span></p>
+              <p>Stones: <span id="Stones"></span></p>  
+              </fieldset>
+              <aside>
+                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+              </aside>      
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+        <h3>Distance Converter</h3>
+        <section id="distance"  class="b distance">
+          <div id="dst">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
+              <figcaption>Kilometers to Miles Conversion</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <p>
+                  <!-- label the input field -->
+                  <label>Kilometers</label>
+                  <!-- input tag for enter the data -->
+                  <!-- kiloweightConvert function call
+                       function kiloweightConvert to evaluate value-->
+                  <input id="Kilometers" type="number" placeholder="kilograms" 
+                         oninput="kilodistanceConvert(this.value)" 
+                         onchange="kilodistanceConvert(this.value)" />
+              </p>
+              <p>Miles: <span id="Miles"></span></p>
+
+              </fieldset>
+              <aside>
+                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
+              </aside>
+    
+            </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+
+      </div>
+
+    <div id="go-home" class="iconbutton">
+      <a href="#home">
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+      </a>
+    </div>
+
+    <footer>Learn more about unit conversion from TWD.com </footer>
+  </body>
+</html>
